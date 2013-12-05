@@ -1,3 +1,10 @@
+huayra-screensaver-themes (1.1) unstable; urgency=low
+
+  * correccion path de dconf
+  * ejecutar dconf en postinstall 
+
+ -- Fernando Toledo <ragnarok@docksud.com.ar>  Thu, 05 Dec 2013 16:25:31 -0300
+
 huayra-screensaver-themes (1.0) unstable; urgency=low
 
   * Initial release.

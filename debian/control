@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 8)
 Standards-Version: 3.9.4
 
 Package: huayra-screensaver-themes
-Depends: ${misc:Depends},
+Depends: ${misc:Depends},dconf-cli
 Architecture: all
 Description: Temas para el salvapantallas de Huayra
  En este paquete se encontraran los distintos temas para
