@@ -1,0 +1,14 @@
+Source: huayra-screensaver-themes
+Section: x11
+Priority: optional
+Maintainer: Fernando Toledo <ragnarok@docksud.com.ar>
+Build-Depends: debhelper (>= 8)
+Standards-Version: 3.9.4
+
+Package: huayra-screensaver-themes
+Depends: ${misc:Depends},
+Architecture: all
+Description: Temas para el salvapantallas de Huayra
+ En este paquete se encontraran los distintos temas para
+ mata-screensaver. En particular para el lockscreen.
+
