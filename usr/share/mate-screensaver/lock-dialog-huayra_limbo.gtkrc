@@ -1,10 +1,10 @@
+# Huayra Limbo Lock Screen Theme
 # 
-# New Wave Lock Screen Theme
+# Author: Iván Hoffmann <digital.h@gmail.com>
 #
-# Author: Anton Kerezov <ankere@gmail.com>
+# Based on New Wave Lock Screen Theme by Anton Kerezov <ankere@gmail.com>
 #
 # Feel free to modify and share!
-
 
 # The main backgroud
 style "window"
@@ -58,9 +58,14 @@ style "label-midtone"
 	fg[ACTIVE] = "White"
 }
 
+style "label-red"
+{
+	#test
+	fg[NORMAL] = "red"
+}
 
 # Special buttons without shadows and more contrast to match the theme
-style "button" = "label-black"
+style "button" 
 {
 	text[NORMAL] = "Black"
 	text[PRELIGHT] = "Black"
@@ -207,9 +212,9 @@ style "hbox"
 style "username"
 {
 	# e.g. Anton Kerezov
-	fg[NORMAL] = "White"
-	fg[PRELIGHT] = "White"
-	fg[ACTIVE] = "White"
+	fg[NORMAL] = "Red"
+	fg[PRELIGHT] = "Red"
+	fg[ACTIVE] = "Red"
 }
 style "pcnickname"
 {
@@ -221,88 +226,79 @@ style "pcnickname"
 style "statusmsg"
 {
 	# warnigs
-	fg[NORMAL] = "#cb5425"
-	fg[PRELIGHT] = "#cb5425"
-	fg[ACTIVE] = "#cb5425"
+	fg[NORMAL] = "#992020"
+	fg[PRELIGHT] = "#992020"
+	fg[ACTIVE] = "#992020"
 }
 
+style "limbo_button" {
+	GtkButton::child-displacement-x = 0
+	GtkButton::child-displacement-y = 0
+	GtkButton::default-border = { 0, 0, 0, 0 }
+	GtkButton::image-spacing = 3
+	GtkToolButton::icon-spacing = 3
 
-style "theme-button"
-{
+	GtkCheckButton::indicator-size = 14
+	
+	bg[NORMAL]        = "#f4f3f3"
+	bg[PRELIGHT]      = "#0bb2c2"
+	bg[SELECTED]      = "#0bb2c2"
+	bg[INSENSITIVE]   = "#f4f3f3"
+	bg[ACTIVE]        = "#03c9dc"
+		
+	engine "murrine" 
+	{
 
-  engine "pixmap"
-  {
-    image
-    {
-      function			= BOX
-      detail				= "buttondefault"
-      recolorable		= TRUE
-      file				= "huayra_limbo/button-default.png"
-      border			= {4, 4, 4, 4}
-      stretch			= TRUE
-    }
-    image
-    {
-      function			= BOX
-      state				= PRELIGHT
-      recolorable		= TRUE
-      file				= "huayra_limbo/button-prelight.png"
-      border			= { 4, 4, 4, 4 }
-      stretch			= TRUE
-    }
-    image
-    {
-      function			= BOX
-      state				= ACTIVE
-      file				= "huayra_limbo/button-pressed.png"
-      border			= { 4, 4, 4, 4 }
-      stretch			= TRUE
-    }	
-    image 
-   {
-     function			= BOX
-     state				= INSENSITIVE
-     file					= "huayra_limbo/button-insensitive.png"
-     border			= { 4, 4, 4, 4 }
-     stretch			= TRUE
-    }
-    image 
-    {
-      function			= BOX
-      file				= "huayra_limbo/button-normal.png"		
-      border			= { 4, 4, 4, 4 }
-      stretch			= TRUE
-    }	
-  }
+		contrast            = 0.8
+		cellstyle = 0
+		glazestyle          = 0 # 0 = flat highlight, 1 = curved highlight, 2 = concave style, 3 = top curved highlight, 4 = beryl highlight
+		gradient_shades     = {1.1,1.0,1.0, 0.99} 
+		glowstyle	    	= 1
+		glow_shade          = 1.4
+
+		highlight_shade     = 1.07
+		lightborder_shade   = 1.3
+		lightborderstyle    = 0 # 0 = lightborder on top side, 1 = lightborder on all sides
+		listviewheaderstyle = 2 # 0 = flat, 1 = glassy, 2 = raised
+		listviewstyle       = 0 # 0 = nothing, 1 = dotted
+		menubaritemstyle    = 0 # 0 = menuitem look, 1 = button look
+		menubarstyle        = 2 # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
+		menuitemstyle       = 0 # 0 = flat, 1 = glassy, 2 = striped
+		menustyle           = 0 # 0 = no vertical menu stripe, 1 = display vertical menu stripe
+		reliefstyle	    	= 2 # 0 = flat, 1 = inset, 2 = shadow
+		rgba		    	= TRUE
+		roundness           = 4
+	}
+
 }
-
-
 
 class "GtkWindow" style "window"
-class "GtkFrame" style "window"
+#class "GtkFrame" style "frame"
+#class "GtkVBox" style "frame"
 #class "GtkHBox" style "hbox"
-class "GtkButton" style "theme-button"
+#class "GtkButton" style "limbo_button"
+widget_class "*<GtkButton>" style "limbo_button" #Botones redondeados
 
 # On leav a message window the label text 
 # is black but don't know how to fix it.
 # Temporary solution
-class "GtkLabel" style "label-midtone"
+#class "GtkLabel" style "label-midtone"
 
 # Customize the widgets
-widget "*auth-prompt-entry" style "textbox"
-widget "*auth-note-button" style "auth-note-button"
-widget "*auth-prompt-label" style "auth-prompt-label"
-widget "*auth-realname-label" style "username"
-widget "*auth-username-label" style "pcnickname"
-widget "*away-message-label" style "pcnickname"
-widget "*auth-capslock-label" style "pcnickname"
-widget "*auth-status-label" style "statusmsg"
-
-widget "*auth-prompt-kbd-layout-indicator.*" style "hbox"
-widget "*auth-prompt-kbd-frame" style "hbox"
+#widget "*auth-prompt-entry" style "textbox"
+#widget "*auth-note-button" style "auth-note-button"
+#widget "*auth-prompt-label" style "auth-prompt-label"
+#widget "*auth-realname-label" style "username"
+#widget "*auth-username-label" style "pcnickname"
+#widget "*away-message-label" style "pcnickname"
+#widget "*auth-capslock-label" style "pcnickname"
+#widget "*auth-status-label" style "statusmsg"
+#widget "*auth-message-label" style "statusmsg"
+#widget "*auth-capslock-label" style "red"
+#widget "*auth-prompt-kbd-layout-indicator.*" style "hbox"
+#widget "*auth-prompt-kbd-frame" style "hbox"
 
 #widget "*auth-action-area.*" style :highest "label-black"
-
 
 
 
