@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-  <requires lib="gtk+" version="2.18"/>
-  <!-- interface-naming-policy toplevel-contextual -->
+  <!-- interface-requires gtk+ 3.0 -->
   <object class="GtkImage" id="image1">
     <property name="width_request">32</property>
     <property name="height_request">32</property>
@@ -30,8 +29,8 @@
     <property name="icon_name">dialog-ok</property>
   </object>
   <object class="GtkFrame" id="lock-dialog">
-    <property name="width_request">400</property>
-    <property name="height_request">380</property>
+    <property name="width_request">365</property>
+    <property name="height_request">150</property>
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="label_xalign">0</property>
@@ -66,10 +65,7 @@
                           <object class="GtkImage" id="auth-face-image">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xalign">0.5</property>
                             <property name="yalign">1</property>
-                            <property name="xpad">0</property>
-                            <property name="ypad">0</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -163,8 +159,6 @@
                                 <property name="width_chars">1</property>
                                 <property name="primary_icon_activatable">False</property>
                                 <property name="secondary_icon_activatable">False</property>
-                                <property name="primary_icon_sensitive">True</property>
-                                <property name="secondary_icon_sensitive">True</property>
                                 <accessibility>
                                   <relation type="labelled-by" target="auth-prompt-label"/>
                                 </accessibility>
@@ -293,6 +287,7 @@
                         <property name="layout_style">center</property>
                         <child>
                           <object class="GtkButton" id="auth-note-button">
+                            <property name="use_action_appearance">False</property>
                             <property name="width_request">32</property>
                             <property name="height_request">32</property>
                             <property name="visible">True</property>
@@ -312,6 +307,7 @@
                         </child>
                         <child>
                           <object class="GtkButton" id="auth-switch-button">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="can_default">True</property>
@@ -329,6 +325,7 @@
                         </child>
                         <child>
                           <object class="GtkButton" id="auth-logout-button">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="can_default">True</property>
@@ -346,6 +343,7 @@
                         </child>
                         <child>
                           <object class="GtkButton" id="auth-cancel-button">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="can_default">True</property>
@@ -363,6 +361,7 @@
                         </child>
                         <child>
                           <object class="GtkButton" id="auth-unlock-button">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="can_default">True</property>
@@ -421,8 +420,6 @@
                   <object class="GtkScrolledWindow" id="scrolledwindow1">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
-                    <property name="hscrollbar_policy">automatic</property>
-                    <property name="vscrollbar_policy">automatic</property>
                     <property name="shadow_type">in</property>
                     <child>
                       <object class="GtkTextView" id="note-text-view">
@@ -445,6 +442,7 @@
                     <child>
                       <object class="GtkButton" id="note-cancel-button">
                         <property name="label">gtk-cancel</property>
+                        <property name="use_action_appearance">False</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="can_default">True</property>
@@ -461,6 +459,7 @@
                     <child>
                       <object class="GtkButton" id="note-ok-button">
                         <property name="label">gtk-save</property>
+                        <property name="use_action_appearance">False</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="can_default">True</property>
