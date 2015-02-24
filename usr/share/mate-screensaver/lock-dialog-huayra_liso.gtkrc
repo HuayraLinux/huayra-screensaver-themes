@@ -6,6 +6,18 @@
 #
 # Te invitamos a modificarlo, mejorarlo y compartirlo !
 
+
+
+gtk-color-scheme = "base_color:#ffffff"
+gtk-color-scheme = "fg_color:#f4f3f3"
+gtk-color-scheme = "tooltip_fg_color:#ffffff"
+gtk-color-scheme = "selected_bg_color:#ffb380" #naranja claro
+gtk-color-scheme = "selected_fg_color:#eeeeee"
+gtk-color-scheme = "text_color:#1a1a1a" #gris oscuro
+gtk-color-scheme = "bg_color:#efefef"
+gtk-color-scheme = "tooltip_bg_color:#4ECAE9" ##6Ae7ea" # verde turquesa
+
+
 # The main backgroud
 style "window"
 {
@@ -239,12 +251,41 @@ style "liso_button" {
 	GtkToolButton::icon-spacing = 3
 
 	GtkCheckButton::indicator-size = 14
+
+	bg[NORMAL]        = @bg_color
+	bg[PRELIGHT]      = shade (1.01, @bg_color)
+	bg[SELECTED]      = shade (1.01, @selected_bg_color) #@selected_bg_color
+	bg[INSENSITIVE]   = shade (0.8, @bg_color)
+	bg[ACTIVE]        = shade (0.95, @bg_color)
+
+
+	fg[INSENSITIVE]   = darker (@bg_color)
+#	fg[ACTIVE]        = shade (1.2, @fg_color)
+
+	fg[NORMAL]		= shade(0.7, @selected_fg_color)
+#	fg[NORMAL]		= shade(0.5, @selected_fg_color)
+	fg[SELECTED]      = shade( 0.9, @selected_fg_color)
+    fg[ACTIVE]      = shade (0.6, @selected_fg_color)
+	fg[PRELIGHT] 	= shade (1.3, @selected_fg_color)
+
+	text[NORMAL]      = @text_color
+	text[PRELIGHT]    = @text_color
+	text[SELECTED]    = @selected_fg_color
+	text[INSENSITIVE] = darker (@bg_color)
+	text[ACTIVE]      = @selected_fg_color
+
+	base[NORMAL]      = @base_color
+	base[PRELIGHT]    = shade (0.95, @bg_color)
+	base[SELECTED]    = @selected_bg_color
+	base[INSENSITIVE] = @bg_color
+	base[ACTIVE]      = shade (0.9, @selected_bg_color)
+
 	
-	bg[NORMAL]        = "#f4f3f3"
-	bg[PRELIGHT]      = "#0bb2c2"
-	bg[SELECTED]      = "#0bb2c2"
-	bg[INSENSITIVE]   = "#f4f3f3"
-	bg[ACTIVE]        = "#03c9dc"
+#	bg[NORMAL]        = "#f4f3f3"
+#	bg[PRELIGHT]      = "#0bb2c2"
+#	bg[SELECTED]      = "#0bb2c2"
+#	bg[INSENSITIVE]   = "#f4f3f3"
+#	bg[ACTIVE]        = "#03c9dc"
 		
 	engine "murrine" 
 	{
@@ -254,19 +295,19 @@ style "liso_button" {
 		glazestyle          = 0 # 0 = flat highlight, 1 = curved highlight, 2 = concave style, 3 = top curved highlight, 4 = beryl highlight
 		gradient_shades     = {1.1,1.0,1.0, 0.99} 
 		glowstyle	    	= 1
-		glow_shade          = 1.4
+		glow_shade          = 1.0
 
 		highlight_shade     = 1.07
 		lightborder_shade   = 1.3
 		lightborderstyle    = 0 # 0 = lightborder on top side, 1 = lightborder on all sides
-		listviewheaderstyle = 2 # 0 = flat, 1 = glassy, 2 = raised
+		listviewheaderstyle = 0 # 0 = flat, 1 = glassy, 2 = raised
 		listviewstyle       = 0 # 0 = nothing, 1 = dotted
 		menubaritemstyle    = 0 # 0 = menuitem look, 1 = button look
-		menubarstyle        = 2 # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
+		menubarstyle        = 0 # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
 		menuitemstyle       = 0 # 0 = flat, 1 = glassy, 2 = striped
 		menustyle           = 0 # 0 = no vertical menu stripe, 1 = display vertical menu stripe
-		reliefstyle	    	= 2 # 0 = flat, 1 = inset, 2 = shadow
-		rgba		    	= TRUE
+		reliefstyle	    	= 0 # 0 = flat, 1 = inset, 2 = shadow
+		rgba		    	= FALSE
 		roundness           = 4
 	}
 
