@@ -1,3 +1,10 @@
+huayra-screensaver-themes (1.6) torbellino; urgency=medium
+
+  * Mejora en tema Liso para que se vean bien los avatares de usuario
+    (Claudio "malefico" Andaur)
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Tue, 03 Mar 2015 14:44:27 -0300
+
 huayra-screensaver-themes (1.5) torbellino; urgency=medium
 
   * Tema Huayra Liso de lockscreen (Claudio Andaur)
