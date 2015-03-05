@@ -225,16 +225,16 @@ style "hbox"
 style "username"
 {
 	# e.g. Anton Kerezov
-	fg[NORMAL] = "Red"
-	fg[PRELIGHT] = "Red"
-	fg[ACTIVE] = "Red"
+	fg[NORMAL] = "White"
+	fg[PRELIGHT] = "White"
+	fg[ACTIVE] = "White"
 }
 style "pcnickname"
 {
 	# e.g. toni on Krum
-	fg[NORMAL] = "Grey"
-	fg[PRELIGHT] = "Grey"
-	fg[ACTIVE] = "Grey"
+	fg[NORMAL] = "#ffffff"
+	fg[PRELIGHT] = "#ffffff"
+	fg[ACTIVE] = "#ffffff"
 }
 style "statusmsg"
 {
@@ -264,7 +264,7 @@ style "liso_button"
 	fg[INSENSITIVE]   = darker (@bg_color)
 	fg[NORMAL]		= shade(0.7, @selected_fg_color)
 	fg[SELECTED]      = shade( 0.9, @selected_fg_color)
-    fg[ACTIVE]      = shade (0.6, @selected_fg_color)
+	fg[ACTIVE]      = shade (0.2, @selected_fg_color)
 	fg[PRELIGHT] 	= shade (1.3, @selected_fg_color)
 
 	text[NORMAL]      = @text_color
@@ -336,21 +336,21 @@ widget_class "*<GtkButton>" style "button" #Botones redondeados
 # On leav a message window the label text 
 # is black but don't know how to fix it.
 # Temporary solution
-#class "GtkLabel" style "label-midtone"
+class "GtkLabel" style "label-midtone"
 
 # Customize the widgets
-#widget "*auth-prompt-entry" style "textbox"
-#widget "*auth-note-button" style "auth-note-button"
-#widget "*auth-prompt-label" style "auth-prompt-label"
-#widget "*auth-realname-label" style "username"
-#widget "*auth-username-label" style "pcnickname"
-#widget "*away-message-label" style "pcnickname"
-#widget "*auth-capslock-label" style "pcnickname"
-#widget "*auth-status-label" style "statusmsg"
-#widget "*auth-message-label" style "statusmsg"
-#widget "*auth-capslock-label" style "red"
-#widget "*auth-prompt-kbd-layout-indicator.*" style "hbox"
-#widget "*auth-prompt-kbd-frame" style "hbox"
+widget "*auth-prompt-entry" style "textbox"
+widget "*auth-note-button" style "auth-note-button"
+widget "*auth-prompt-label" style "auth-prompt-label"
+widget "*auth-realname-label" style "username"
+widget "*auth-username-label" style "pcnickname"
+widget "*away-message-label" style "pcnickname"
+widget "*auth-capslock-label" style "pcnickname"
+widget "*auth-status-label" style "statusmsg"
+widget "*auth-message-label" style "statusmsg"
+widget "*auth-capslock-label" style "red"
+widget "*auth-prompt-kbd-layout-indicator.*" style "hbox"
+widget "*auth-prompt-kbd-frame" style "hbox"
 
 #widget "*auth-action-area.*" style :highest "label-black"
 
