@@ -1,3 +1,9 @@
+huayra-screensaver-themes (1.7) torbellino; urgency=medium
+
+  * Mejora en color de texto de la ventana. (Claudio "malefico" Andaur)
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Mon, 09 Mar 2015 10:09:00 -0300
+
 huayra-screensaver-themes (1.6) torbellino; urgency=medium
 
   * Mejora en tema Liso para que se vean bien los avatares de usuario
