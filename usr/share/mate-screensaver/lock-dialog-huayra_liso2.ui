@@ -85,13 +85,21 @@
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
+                        <property name="margin_top">58</property>
                         <property name="spacing">2</property>
                         <child>
                           <object class="GtkLabel" id="auth-realname-label">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
+                            <property name="xalign">1</property>
                             <property name="label" translatable="yes">&lt;span size="x-large"&gt;%R&lt;/span&gt;</property>
-                            <property name="use_markup">True</property>
+                            <property name="justify">right</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Asap 40"/>
+                              <attribute name="style" value="normal"/>
+                              <attribute name="weight" value="bold"/>
+                              <attribute name="size" value="96"/>
+                            </attributes>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -103,8 +111,10 @@
                           <object class="GtkLabel" id="auth-username-label">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
+                            <property name="xalign">1</property>
                             <property name="label" translatable="yes">&lt;span size="small"&gt;%U on %h&lt;/span&gt;</property>
                             <property name="use_markup">True</property>
+                            <property name="justify">right</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -142,6 +152,7 @@
                                 <property name="halign">center</property>
                                 <property name="valign">center</property>
                                 <property name="stock">gtk-missing-image</property>
+                                <property name="icon-size">5</property>
                               </object>
                               <packing>
                                 <property name="expand">False</property>
@@ -172,6 +183,7 @@
                                 <property name="visibility">False</property>
                                 <property name="activates_default">True</property>
                                 <property name="width_chars">1</property>
+                                <property name="progress_pulse_step">0.10999999940395355</property>
                                 <property name="primary_icon_activatable">False</property>
                                 <property name="secondary_icon_activatable">False</property>
                                 <accessibility>
