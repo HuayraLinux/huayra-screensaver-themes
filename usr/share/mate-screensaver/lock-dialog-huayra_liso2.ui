@@ -232,6 +232,7 @@
                             </child>
                             <child>
                               <object class="GtkEntry" id="auth-prompt-entry">
+                                <property name="width_request">120</property>
                                 <property name="can_focus">True</property>
                                 <property name="visibility">False</property>
                                 <property name="activates_default">True</property>
