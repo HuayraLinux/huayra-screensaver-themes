@@ -37,32 +37,49 @@
     <property name="shadow_type">none</property>
     <child>
       <object class="GtkVBox" id="lock-box">
-        <property name="width_request">438</property>
-        <property name="height_request">228</property>
+        <property name="width_request">620</property>
+        <property name="height_request">360</property>
         <property name="visible">True</property>
         <property name="can_focus">False</property>
-        <property name="halign">center</property>
+        <property name="halign">start</property>
         <property name="valign">end</property>
-        <property name="margin_top">19</property>
+        <property name="margin_top">40</property>
+        <property name="border_width">20</property>
         <child>
           <object class="GtkNotebook" id="notebook">
-            <property name="height_request">126</property>
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="valign">start</property>
             <property name="show_tabs">False</property>
             <property name="show_border">False</property>
             <child>
               <object class="GtkAlignment" id="alignment1">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="xalign">0</property>
-                <property name="yalign">0</property>
                 <child>
                   <object class="GtkVBox" id="vbox1">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="valign">end</property>
+                    <property name="spacing">4</property>
+                    <child>
+                      <object class="GtkAlignment" id="alignment2">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <child>
+                          <object class="GtkLabel" id="auth-capslock-label">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="label" translatable="yes">Caps Lock Warning</property>
+                          </object>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="padding">15</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
                     <child>
                       <object class="GtkVBox" id="vbox2">
                         <property name="visible">True</property>
@@ -83,7 +100,7 @@
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">True</property>
-                        <property name="position">0</property>
+                        <property name="position">1</property>
                       </packing>
                     </child>
                     <child>
@@ -94,7 +111,7 @@
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">False</property>
-                        <property name="position">1</property>
+                        <property name="position">2</property>
                       </packing>
                     </child>
                     <child>
@@ -105,7 +122,7 @@
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">False</property>
-                        <property name="position">2</property>
+                        <property name="position">3</property>
                       </packing>
                     </child>
                     <child>
@@ -114,7 +131,7 @@
                         <property name="can_focus">False</property>
                         <property name="halign">end</property>
                         <property name="valign">end</property>
-                        <property name="margin_top">2</property>
+                        <property name="margin_top">58</property>
                         <property name="spacing">2</property>
                         <child>
                           <object class="GtkLabel" id="auth-realname-label">
@@ -153,43 +170,26 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkAlignment" id="alignment3">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <child>
-                              <object class="GtkLabel" id="auth-capslock-label1">
-                                <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                              </object>
-                            </child>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="padding">15</property>
-                            <property name="position">2</property>
-                          </packing>
+                          <placeholder/>
                         </child>
                       </object>
                       <packing>
                         <property name="expand">True</property>
                         <property name="fill">True</property>
-                        <property name="position">3</property>
+                        <property name="position">4</property>
                       </packing>
                     </child>
                     <child>
                       <object class="GtkVBox" id="auth-prompt-box">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="margin_top">24</property>
+                        <property name="spacing">2</property>
                         <child>
                           <object class="GtkHBox" id="hbox1">
-                            <property name="height_request">20</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="halign">end</property>
-                            <property name="valign">start</property>
-                            <property name="margin_right">1</property>
+                            <property name="border_width">4</property>
                             <property name="spacing">4</property>
                             <child>
                               <object class="GtkImage" id="auth-face-imag">
@@ -205,7 +205,6 @@
                               <packing>
                                 <property name="expand">False</property>
                                 <property name="fill">False</property>
-                                <property name="padding">110</property>
                                 <property name="position">0</property>
                               </packing>
                             </child>
@@ -216,14 +215,9 @@
                               <object class="GtkLabel" id="auth-prompt-label">
                                 <property name="can_focus">False</property>
                                 <property name="xalign">0</property>
-                                <property name="justify">right</property>
                                 <accessibility>
                                   <relation type="label-for" target="auth-prompt-entry"/>
                                 </accessibility>
-                                <attributes>
-                                  <attribute name="font-desc" value="Asap 12"/>
-                                  <attribute name="foreground" value="#ffffffffffff"/>
-                                </attributes>
                               </object>
                               <packing>
                                 <property name="expand">False</property>
@@ -233,9 +227,7 @@
                             </child>
                             <child>
                               <object class="GtkEntry" id="auth-prompt-entry">
-                                <property name="width_request">150</property>
                                 <property name="can_focus">True</property>
-                                <property name="halign">end</property>
                                 <property name="visibility">False</property>
                                 <property name="activates_default">True</property>
                                 <property name="width_chars">1</property>
@@ -256,7 +248,6 @@
                               <object class="GtkTable" id="table1">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
-                                <property name="valign">start</property>
                                 <property name="n_rows">3</property>
                                 <child>
                                   <object class="GtkFixed" id="fixed4">
@@ -287,9 +278,8 @@
                                   <packing>
                                     <property name="top_attach">1</property>
                                     <property name="bottom_attach">2</property>
-                                    <property name="x_options">GTK_SHRINK | GTK_FILL</property>
+                                    <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
                                     <property name="y_options">GTK_SHRINK | GTK_FILL</property>
-                                    <property name="y_padding">23</property>
                                   </packing>
                                 </child>
                               </object>
@@ -301,8 +291,8 @@
                             </child>
                           </object>
                           <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
                             <property name="position">0</property>
                           </packing>
                         </child>
@@ -321,15 +311,13 @@
                       <packing>
                         <property name="expand">True</property>
                         <property name="fill">True</property>
-                        <property name="position">4</property>
+                        <property name="position">5</property>
                       </packing>
                     </child>
                     <child>
                       <object class="GtkHButtonBox" id="auth-action-area">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="valign">start</property>
-                        <property name="hexpand">True</property>
                         <property name="layout_style">center</property>
                         <child>
                           <object class="GtkButton" id="auth-note-button">
@@ -431,8 +419,8 @@
                       <packing>
                         <property name="expand">True</property>
                         <property name="fill">True</property>
-                        <property name="padding">6</property>
-                        <property name="position">5</property>
+                        <property name="padding">1</property>
+                        <property name="position">6</property>
                       </packing>
                     </child>
                   </object>
@@ -476,7 +464,6 @@
                       <object class="GtkTextView" id="note-text-view">
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
-                        <property name="wrap_mode">word-char</property>
                       </object>
                     </child>
                   </object>
@@ -549,7 +536,7 @@
             </child>
           </object>
           <packing>
-            <property name="expand">False</property>
+            <property name="expand">True</property>
             <property name="fill">True</property>
             <property name="position">0</property>
           </packing>
