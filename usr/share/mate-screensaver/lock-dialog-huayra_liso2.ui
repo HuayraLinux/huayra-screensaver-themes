@@ -205,6 +205,7 @@
                               <packing>
                                 <property name="expand">False</property>
                                 <property name="fill">False</property>
+                                <property name="padding">175</property>
                                 <property name="position">0</property>
                               </packing>
                             </child>
@@ -218,6 +219,10 @@
                                 <accessibility>
                                   <relation type="label-for" target="auth-prompt-entry"/>
                                 </accessibility>
+                                <attributes>
+                                  <attribute name="font-desc" value="Asap 12"/>
+                                  <attribute name="foreground" value="#ffffffffffff"/>
+                                </attributes>
                               </object>
                               <packing>
                                 <property name="expand">False</property>
@@ -239,7 +244,7 @@
                                 </accessibility>
                               </object>
                               <packing>
-                                <property name="expand">True</property>
+                                <property name="expand">False</property>
                                 <property name="fill">True</property>
                                 <property name="position">3</property>
                               </packing>
