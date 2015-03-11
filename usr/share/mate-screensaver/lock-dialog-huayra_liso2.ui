@@ -173,10 +173,10 @@
                             <property name="spacing">4</property>
                             <child>
                               <object class="GtkImage" id="auth-face-image">
-                                <property name="width_request">96</property>
-                                <property name="height_request">96</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
+                                <property name="has_tooltip">True</property>
+                                <property name="tooltip_text" translatable="yes">Avatar del usuario</property>
                                 <property name="halign">center</property>
                                 <property name="valign">center</property>
                                 <property name="stock">gtk-missing-image</property>
@@ -185,7 +185,7 @@
                               <packing>
                                 <property name="expand">False</property>
                                 <property name="fill">True</property>
-                                <property name="padding">48</property>
+                                <property name="padding">50</property>
                                 <property name="position">0</property>
                               </packing>
                             </child>
@@ -214,6 +214,8 @@
                               <object class="GtkEntry" id="auth-prompt-entry">
                                 <property name="width_request">140</property>
                                 <property name="can_focus">True</property>
+                                <property name="has_tooltip">True</property>
+                                <property name="tooltip_text" translatable="yes">Ingresá tu contraseña</property>
                                 <property name="visibility">False</property>
                                 <property name="has_frame">False</property>
                                 <property name="activates_default">True</property>
