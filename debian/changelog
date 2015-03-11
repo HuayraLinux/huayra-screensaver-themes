@@ -1,3 +1,10 @@
+huayra-screensaver-themes (1.9) torbellino; urgency=medium
+
+  * Mejoras en el nuevo tema Liso 2 (Claudio "malefico" Andaur).
+    Seteado por defecto el tema Liso 2.
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Wed, 11 Mar 2015 16:06:59 -0300
+
 huayra-screensaver-themes (1.8) torbellino; urgency=medium
 
   * Nuevo tema Liso 2. (Claudio "malefico" Andaur).
