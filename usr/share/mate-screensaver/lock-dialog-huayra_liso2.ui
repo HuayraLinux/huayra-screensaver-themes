@@ -179,7 +179,7 @@
                                 <property name="tooltip_text" translatable="yes">Avatar del usuario</property>
                                 <property name="halign">center</property>
                                 <property name="valign">center</property>
-                                <property name="stock">gtk-missing-image</property>
+                                <property name="pixbuf">logo.png</property>
                                 <property name="icon-size">5</property>
                               </object>
                               <packing>
