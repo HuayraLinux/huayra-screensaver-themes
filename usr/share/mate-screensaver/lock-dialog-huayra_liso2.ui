@@ -205,7 +205,7 @@
                               <packing>
                                 <property name="expand">False</property>
                                 <property name="fill">True</property>
-                                <property name="padding">30</property>
+                                <property name="padding">50</property>
                                 <property name="position">0</property>
                               </packing>
                             </child>
@@ -248,7 +248,7 @@
                                 </accessibility>
                               </object>
                               <packing>
-                                <property name="expand">False</property>
+                                <property name="expand">True</property>
                                 <property name="fill">True</property>
                                 <property name="position">3</property>
                               </packing>
