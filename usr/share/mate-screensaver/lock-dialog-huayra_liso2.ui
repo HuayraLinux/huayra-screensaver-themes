@@ -81,27 +81,7 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkVBox" id="vbox2">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <child>
-                          <object class="GtkImage" id="auth-face-image">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="yalign">1</property>
-                          </object>
-                          <packing>
-                            <property name="expand">True</property>
-                            <property name="fill">True</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                      </object>
-                      <packing>
-                        <property name="expand">False</property>
-                        <property name="fill">True</property>
-                        <property name="position">1</property>
-                      </packing>
+                      <placeholder/>
                     </child>
                     <child>
                       <object class="GtkLabel" id="away-message-label">
@@ -192,7 +172,7 @@
                             <property name="border_width">4</property>
                             <property name="spacing">4</property>
                             <child>
-                              <object class="GtkImage" id="auth-face-imag">
+                              <object class="GtkImage" id="auth-face-image">
                                 <property name="width_request">96</property>
                                 <property name="height_request">96</property>
                                 <property name="visible">True</property>
