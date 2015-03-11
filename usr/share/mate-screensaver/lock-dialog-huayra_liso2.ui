@@ -141,7 +141,7 @@
                             <property name="label" translatable="yes">%R</property>
                             <property name="justify">right</property>
                             <attributes>
-                              <attribute name="font-desc" value="Asap Bold 32"/>
+                              <attribute name="font-desc" value="Asap 32"/>
                               <attribute name="foreground" value="#ffffffffffff"/>
                             </attributes>
                           </object>
@@ -205,7 +205,7 @@
                               <packing>
                                 <property name="expand">False</property>
                                 <property name="fill">False</property>
-                                <property name="padding">67</property>
+                                <property name="padding">85</property>
                                 <property name="position">0</property>
                               </packing>
                             </child>
@@ -232,7 +232,7 @@
                             </child>
                             <child>
                               <object class="GtkEntry" id="auth-prompt-entry">
-                                <property name="width_request">120</property>
+                                <property name="width_request">140</property>
                                 <property name="can_focus">True</property>
                                 <property name="visibility">False</property>
                                 <property name="activates_default">True</property>
