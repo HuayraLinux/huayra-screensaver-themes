@@ -1,12 +1,12 @@
 Source: huayra-screensaver-themes
 Section: x11
 Priority: optional
-Maintainer: Ivan Hoffmann <digital.h@gmail.com>
+Maintainer: Fernando Toledo <ragnarok@docksud.com.ar>
 Build-Depends: debhelper (>= 8)
 Standards-Version: 3.9.4
 
 Package: huayra-screensaver-themes
-Depends: ${misc:Depends},dconf-tools
+Depends: ${misc:Depends}, dconf-cli ( >= 0.30)
 Architecture: all
 Description: Temas para el salvapantallas de Huayra
  En este paquete se encontraran los distintos temas para

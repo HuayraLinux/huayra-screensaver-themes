@@ -1,3 +1,9 @@
+huayra-screensaver-themes (1.10) unstable; urgency=medium
+
+  * cambio dconf-tools -> dconf-cli
+
+ -- Fernando Toledo <ragnarok@docksud.com.ar>  Mon, 08 Feb 2021 14:06:54 -0300
+
 huayra-screensaver-themes (1.9) torbellino; urgency=medium
 
   * Mejoras en el nuevo tema Liso 2 (Claudio "malefico" Andaur).
