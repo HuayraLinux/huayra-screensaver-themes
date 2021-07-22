@@ -1,3 +1,10 @@
+huayra-screensaver-themes (1.11) unstable; urgency=medium
+
+  * Agrega una tema 'Huayra Austral', que por ahora es igual al original de
+    mate-screensaver para que sea personalizado luego.
+
+ -- Matias De lellis <mati86dl@gmail.com>  Thu, 22 Jul 2021 10:13:30 -0300
+
 huayra-screensaver-themes (1.10) unstable; urgency=medium
 
   * cambio dconf-tools -> dconf-cli
